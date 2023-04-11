@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PETSHOP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css" />
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+  
+
+
+.head {
+margin-top: -3.2%;
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(41, 8, 8);
+  top:0;
+  left:0;
+}
+.head1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: yellowgreen;
+}
+.head2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  color: yellowgreen;
+}
+.h3{
+  text-align: center;
+  color:rgb(25, 212, 72);
+
+  
+}
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+.veg{
+  padding-left:20%;
+  color:#FB2576;
+}
+.nv{
+  padding-left: 10%;
+  padding-right: 20%;
+  color:#FB2576;
+}
+.con {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px 30px 0px;
+}
+.con img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.i {
+  display: flex;
+  flex: 1 1 600px;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+
+.des {
+  margin: auto 1.5rem;
+}
+
+.t {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #FF9E9E;
+}
+
+.des p {
+  font-size: 1.4rem;
+  color: rgb(182, 97, 169);
+  font-weight: 500;
+}
+
+.des .pr {
+  color: rgb(181, 74, 152);
+  font-weight: 700;
+}
+body {
+  background-color:#e1efef;
+}
+#veg{
+  text-align: center;
+  padding-left: 15%;
+}
+#nv{
+  text-align: center;
+  padding-left:15%;
+}
+.vh{
+  
+  font-size: 40px;
+  color: yellowgreen;
+}
+.hn{
+  font-size: 40px;
+  color: yellowgreen;
+}
+footer {
+  bottom: 0;
+  width: cover;
+}
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+
+  padding: 55px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+.footer-distributed h3 {
+  color: #9a279c;
+  font: normal 36px "Cookie", cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: #5383d3;
+}
+
+.footer-distributed .footer-links {
+  color: #a33356;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #3ab411;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #a9289c;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #5383d3;
+  text-decoration: none;
+}
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #921d61;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #2775b5;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.footer-distributed .footer-center i {
+  margin-left: 0;
+}
+/* The navbar */
+.topnav {
+  overflow: hidden;
+
+  align-items: right;
+  align-content: right;
+  text-align: right;
+}
+/* Navbar links */
+.topnav a {
+  float: right;
+  color: #0f905e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(135, 32, 32);
+  color: black;
+}
+.top-left {
+  position: absolute;
+  left: 10px;
+  color: rgb(54, 68, 180);
+  float: left;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(213, 34, 183);
+  font-size: 40px;
+}
+
+
+
+
+
+
+</style>
+  </head>
+  <body>
+   
+  
+      
+   
+<section id="OUR-PRODUCTS">
+  
+      <div class="topnav">
+        <a href="#footer">Contact</a>
+        <a href="allproduct.html">All Products</a>
+        <a href="about.html">About</a>
+        <a href="home.html">Home</a>
+      </div>
+      <h1 class="head">OUR PRODUCTS</h1>
+      <div class="head2">
+        <h2 class="head1">PETS</h2>
+        <h3 class="h3">
+            <a href="#dog" class="dog"> Dog </a> <br><br>
+            <a href="#cat" class="cat"> Cat</a><br><br>
+            <a href="#fish"class="fish">Fish</a><br><br>
+            <a href="#birds"class="birds">Birds</a><br><br>
+        </h3>
+      </div>
+    </div>
+
+
+
+                                                
+      <div class="con">
+        <div id="dog"><h3 class="hn">-----DOG----</h3>
+        <div class="i">
+          <div class="img">
+            <img
+              src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2021%2F08%2F23%2Fpictures-of-german-shepherds-2000.jpg&q=60"
+              alt=""
+            />
+          </div>
+          <div class="des">
+            <h2 class="t">GERMAN SHEPHERD</h2>
+            <p>
+             It gets along well with children and other pets if raised with them, but in keeping with their guarding instincts, they tend to be leery of strangers.
+            </p>
+            <p class="pr">Price: &#8377; 10,000 to 70,000</p>
+          </div>
+        </div>
+        <div class="i">
+          <div class="img">
+            <img
+              src="https://www.jiomart.com/images/product/600x600/rvnhcuzqvd/senapati-waterproof-red-dog-neck-collar-belts-and-rope-leash-set-with-fibre-handle-xl-1-5m-2m-product-images-orvnhcuzqvd-p590942795-0-202112090644.jpg"
+              alt="error"
+            />
+          </div>
+          <div class="des">
+            <h2 class="t">DOG BELT</h2>
+            <p>
+              Dog Belts, Collars, Harness & Leashes ; Tame Love Grinded Chrome Platted Training Choke Chain Collar for Small Dog (2.5 ft). Rs. 270 Rs. 145.
+            </p>
+            <p class="pr">Price: &#8377; 270</p>
+          </div>
+        </div>
+        <div class="i">
+          <div class="img">
+            <img
+              src="https://m.media-amazon.com/images/I/71xOphzcoVL._SL1000_.jpg"
+              alt=""
+            />
+          </div>
+          <div class="des">
+            <h2 class="t">GROOMING PRODUCTS</h2>
+            <p>
+              Groomers blow your dog's coat dry to achieve that ultra-fluffy look that's full of body. They use special dryers built for treating pets. 
+            </p>
+            <p class="pr">Price: &#8377; 5000</p>
+          </div>
+        </div>
+        <div class="i">
+          <div class="img">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpI7wtdosmTsoxizZhlYp9dMN8btV9itfLIA&usqp=CAU"
+              alt=""
+            />
+          </div>
+          <div class="des">
+            <h2 class="t">BICHON FRISE</h2>
+            <p>
+              Bichons make for great family dogs who are comfortable living in most environments.
+            </p>
+            </p>
+            <p class="pr">Price: &#8377; 25,000 to 30,000</p>
+          </div>
+        </div>
+    </div>
+    
+<div class="i">
+  <div class="img">
+    <img
+    src="https://cdn.shopify.com/s/files/1/0086/0795/7054/products/PedigreeChicken_VegetablesAdultDryDogFood_510x_2x_1f0672c6-5aa7-4243-9109-c0a87dcc45fa.jpg?v=1636462229&width=533"
+      alt=""
+    />
+  </div>
+<div class="des">
+  <h2 class="t">PEDIGREE
+    </h2>
+  <p>
+    promote healthy digestion, supporting tummies too, plus there's Omega 3 to help keep them fit for life and vitamins and minerals to help maintain natural defences and vitality. 
+  </p>
+  </p>
+  <p class="pr">Price: &#8377; 140 </p>
+</div>
+</div>
+
+<div class="i">
+  <div class="img">
+    <img
+      src="https://img.freepik.com/premium-photo/shih-tzu-wilderness-wooden-ears-looking-cute_665346-96.jpg?w=2000"
+      alt=""
+    />
+  </div>
+<div class="des">
+  <h2 class="t">SHIH TZU</h2>
+  <p>
+    The Shih Tzu was bred to be a house companion. As such, they require minimal exercise.
+  </p>
+  </p>
+  <p class="pr">Price: &#8377; 20,000 to 40,000</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+      <div class="con">
+        <div id="cat"><h3 class="hn">-----CAT----</h3>
+        <div class="i">
+          <div class="img">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQhflacSv1p3HO0wboN93VjF5scdjewFYPtA&usqp=CAU"
+              alt=""
+            />
+          </div>
+          <div class="des">
+            <h2 class="t">PERSIAN CAT</h2>
+            <p>
+              "They're not low-maintenance at all, but they're super sociable, friendly, smart and great to be around,” Blass says.
+            <p class="pr">Price: &#8377; 18,000 to 20,000</p>
+          </div>
+        </div>
+        <div class="i">
+          <div class="img">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0QSQznymLGv3tNKPAEZ3M6fIqRpBpzOe_sQ&usqp=CAU"
+              alt="error"
+            />
+          </div>
+          <div class="des">
+            <h2 class="t">SIBRIAN CAT</h2>
+            <p>
+              Siberian cats are very personable and want to be near their owners. They enjoy the company of children, dogs, and other animals.
+            </p>
+            <p class="pr">Price: &#8377;10,000 to 30,000 </p>
+          </div>
+        </div>
+        <div class="i">
+          <div class="img">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcV4stJ3dzGCNQ82eC1DMHT4ZSOVLk3wOJsg&usqp=CAU"
+              alt=""
+            />
+          </div>
+          <div class="des">
+            <h2 class="t">CAT FOOD-PURPLET</h2>
+            <p>
+              properly formulated raw, home-cooked, or a grain-free canned diet.
+            </p>
+            <p class="pr">Price: &#8377; 500 to 1200</p>
+          </div>
+        </div>
+        <div class="i">
+          <div class="img">
+            <img
+              src="https://media.istockphoto.com/id/1392115837/photo/red-bengal-cat-in-a-portable-bag-on-the-background-of-the-room.jpg?b=1&s=170667a&w=0&k=20&c=yt-2MKuzlPPt2dJbF_pUxBS14hoaw6SpOeJJJntM_P0="
+              alt=""
+            />
+          </div>
+          <div class="des">
+            <h2 class="t">CAT BAG</h2>
+            <p>
+              Designed to secure cats making it easy to perform procedures such as injecting medicine, administering IV
+            </p>
+            </p>
+            <p class="pr">Price: &#8377; 2000 to 5000 </p>
+          </div>
+        </div>
+    </div>
+    
+<div class="i">
+  <div class="img">
+    <img
+    src="https://m.media-amazon.com/images/I/619zUAVmneL.jpg"
+    alt=""
+    />
+  </div>
+<div class="des">
+  <h2 class="t">CAT GROOMING PRODUCTS
+    </h2>
+  <p>
+    groom long-haired and medium-haired cats daily, while short-haired cats can usually be groomed about once a week.
+  </p>
+  </p>
+  <p class="pr">Price: &#8377; 2000 to 7500 </p>
+</div>
+</div>
+
+<div class="i">
+  <div class="img">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3nF6f-ZjONDE2H-xlRfK8nY-OawmtDyq5Nw&usqp=CAU"
+      alt=""
+    />
+  </div>
+<div class="des">
+  <h2 class="t">CAT BEDS</h2>
+  <p>
+    Cat beds are available according to your homey compact
+  </p>
+  </p>
+  <p class="pr">Price: &#8377; 500 to 10,000</p>
+</div>
+</div>
+</div>
+
+
+
+      <div class="con">
+        <div id="fish"><h3 class="hn">-----FISH----</h3>
+        <div class="i">
+          <div class="img">
+            <img
+              src="https://img.etimg.com/thumb/msid-65604285,width-640,resizemode-4,imgsize-322872/taste-buds.jpg"
+              alt=""
+            />
+          </div>
+          <div class="des">
+            <h2 class="t">GOLD FISH</h2>
+            <p>
+              It's fairly easy to maintain. As long as you regularly check the water conditions and keep a close eye on your goldfish, they should live long and happy lives.
+            </p>
+            <p class="pr">Price: &#8377; 1000</p>
+          </div>
+        </div>
+        <div class="i">
+          <div class="img">
+            <img
+              src="https://img.staticmb.com/mbcontent//images/uploads/2022/6/fish-tank.jpg"
+              alt="error"
+            />
+          </div>
+          <div class="des">
+            <h2 class="t">FISH TANKS</h2>
+            <p>
+              All of our experts prefer glass aquariums over acrylic ones because they don't scratch as easily during cleaning or warp over time.
+            </p>
+            <p class="pr">Price: &#8377; 2000 to 45000</p>
+          </div>
+        </div>
+        <div class="i">
+          <div class="img">
+            <img
+              src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2019/07/silver-arovana-2295085-960-720-1563765443.jpg"
+              alt=""
+            />
+          </div>
+          <div class="des">
+            <h2 class="t">AROVANA FISH</h2>
+            <p>
+              Its considered to be  lucky wish that brings all luck and positive vibes to the person who buys this.
+            </p>
+            <p class="pr">Price: &#8377; 5000 to 10,000</p>
+          </div>
+        </div>
+        <div class="i">
+          <div class="img">
+            <img
+              src="https://rukminim1.flixcart.com/image/800/800/juwzf680/pet-food/g/z/x/150-fish-osaki-spiniy-fish-food-basic-aquapetzworld-original-imaffwpgq9rz58ms.jpeg?q=90"
+              alt=""
+            />
+          </div>
+          <div class="des">
+            <h2 class="t">FISH FOOD</h2>
+            <p>
+              It is a common food that can be given to normal fish and these normal or small fish is served for larger fish.
+            </p>
+            </p>
+            <p class="pr">Price: &#8377; 100 to 25000</p>
+          </div>
+        </div>
+    </div>
+    
+<div class="i">
+  <div class="img">
+    <img
+    src="https://www.acaquarium.com/wp-content/uploads/2022/09/types-of-betta-fish.jpeg"
+      alt=""
+    />
+  </div>
+<div class="des">
+  <h2 class="t">BETA FISH
+    </h2>
+  <p>
+    Bettas make great pets for beginning and experienced aquarists alike. Unlike some fish species, they are highly interactive and you can truly "bond" with them.
+  </p>
+  </p>
+  <p class="pr">Price: &#8377; 200 to 700 </p>
+</div>
+</div>
+
+<div class="i">
+  <div class="img">
+    <img
+      src="https://3.imimg.com/data3/YL/WT/MY-14725591/aquarium-decoration-items-500x500.jpg"
+      alt=""
+    />
+  </div>
+<div class="des">
+  <h2 class="t">TANK DECORATIONS</h2>
+  <p>
+    All decorations items are available here for the fish tanks.
+  </p>
+  </p>
+  <p class="pr">Price: &#8377; 500 to 5000</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="con">
+  <div id="birds"><h3 class="hn">-----BIRDS----</h3>
+  <div class="i">
+    <div class="img">
+      <img
+        src="https://biologydictionary.net/wp-content/uploads/2020/07/Lovebird-1.jpg"
+        alt=""
+      />
+    </div>
+    <div class="des">
+      <h2 class="t">LOVE BIRDS</h2>
+      <p>
+        Lovebirds are friendly and easily form bonds with their owners and other companions – regardless of whether those companions are feathered or not.
+      </p>
+      <p class="pr">Price: &#8377; 1200</p>
+    </div>
+  </div>
+  <div class="i">
+    <div class="img">
+      <img
+        src="https://content.jdmagicbox.com/quickquotes/images_main/jainsons-pet-products-bird-nest-with-chewing-toys-hanging-bird-cage-toys-suitable-for-small-parakeets-cockatiels-conures-finches-budgie-macaws-p-377137105-c4lia.jpg"
+        alt="error"
+      />
+    </div>
+    <div class="des">
+      <h2 class="t">HANGING TOYS </h2>
+      <p>
+         Pet Products Bird Nest With Chewing Toys-Hanging Bird Cage Toys Suitable For Small Parakeets, Cockatiels, Conures, Finches, Budgie, Macaws.
+      </p>
+      <p class="pr">Price: &#8377; 650 onwards</p>
+    </div>
+  </div>
+  <div class="i">
+    <div class="img">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGgaD750UohS__XXUIRAc1IbtC5By8fMVmWg&usqp=CAU"
+        alt=""
+      />
+    </div>
+    <div class="des">
+      <h2 class="t">COCKATEILS</h2>
+      <p>
+        The captivating cockatiel is another great choice for anyone who wants a friendly and affectionate pet bird.
+      </p>
+      <p class="pr">Price: &#8377; 5000 </p>
+    </div>
+  </div>
+  <div class="i">
+    <div class="img">
+      <img
+        src="https://m.media-amazon.com/images/I/71D04aphzEL._SL1500_.jpg"
+        alt=""
+      />
+    </div>
+    <div class="des">
+      <h2 class="t">BIRD FOOD</h2>
+      <p>
+        It is a common food that can be given to birds which we manufactured naturely.
+      </p>
+      </p>
+      <p class="pr">Price: &#8377; 100 to 2500</p>
+    </div>
+  </div>
+</div>
+
+<div class="i">
+<div class="img">
+<img
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnsPbc-y5t1ks4EvUIcXkhOq-rthpYgYR-g&usqp=CAU"
+alt=""
+/>
+</div>
+<div class="des">
+<h2 class="t">HYACINTH MACAW
+</h2>
+<p>
+  Although it is the largest of the macaws, the hyacinth macaw's sweet and even personality has earned it the "gentle giant" moniter.
+</p>
+</p>
+<p class="pr">Price: &#8377; 2000 to 7000 </p>
+</div>
+</div>
+
+<div class="i">
+<div class="img">
+<img
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGGYtK7pa4LSfMdsYN0Sx1tiQh-g2XC5UH8JmxGXuj2AtOrJSooK2ys4w-Yzrt0i2qQzA&usqp=CAU"
+alt=""
+/>
+</div>
+<div class="des">
+<h2 class="t">BIRD CAGES</h2>
+<p>
+All types of cages are available according to your homey compact.
+</p>
+</p>
+<p class="pr">Price: &#8377; 650 onwards</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+      <footer class="footer-distributed" id="footer">
+        <div class="footer-left">
+          <h3>PET<span>SHOP</span></h3>
+  
+          <p class="footer-links">
+            <a href="home.html">Home</a>
+            --
+            <a href="allproduct.html">All products</a>
+            --
+            <a href="contact.html">contact</a>
+            --
+            <a href="about.html">About</a>
+            
+          </p>
+  
+          <p class="footer-company-name">PETSHOP &copy; 2002</p>
+        </div>
+  
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Chennai </span> TamilNadu</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>6374920256</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">petshop@gmail.com </a></p>
+          </div>
+        </div>
+  
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About the company</span>
+            Fantacy Design is a blog for web designers, web develpor &amp; SEO
+            Learner.
+          </p>
+  
+          <div class="footer-icons">
+            <a href=" "><i class="fa fa-facebook"></i></a>
+            <a href=" "><i class="fa fa-twitter"></i></a>
+            <a href=" "><i class="fa fa-linkedin"></i></a>
+            <a href=" "><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </footer>
+      
+    </section>
+  </body>
+</html>
+
+
+
+
+      </body>
+</html>
